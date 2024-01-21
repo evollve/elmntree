@@ -1,0 +1,383 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ffffff; /* Secondary color */
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300; /* Lightweight Poppins font */
+    text-align:center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: #ffffff; /* Primary color */
+    color: #333;
+    padding: 10px 0; /* Adjust the padding to ensure the header is not too tall */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #9DBF9E;
+}
+
+h1 span {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #333; /* Standard link color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-weight: 300; /* Lightweight Poppins font */
+}
+.hero {
+    background: url('hero-background.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.responsive-map {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+
+.responsive-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.featured-shops {
+    padding: 2rem 0;
+}
+
+.featured-shops .shop {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align:center;
+}
+
+.featured-shops .shop:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.featured-shops img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.featured-shops h3, .featured-shops p {
+    margin: 0.5rem;
+    color: #333;
+}
+
+.featured-shops p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+button, .button {
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background-color: #9DBF9E;
+}
+
+.signup-form {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.signup-iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 1500px;
+    border: none;
+    margin: auto;
+    display: block;
+}
+
+main > section:first-child {
+    margin-top: 2rem;
+}
+
+nav ul li a:hover, .button:hover {
+    color: #9DBF9E; /* Accent color for hover state */
+}
+
+.featured-shops .shop-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    
+}
+
+.footer-content, .footer-content p, .footer-content div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.nitro-info .nitro-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 2rem;
+}
+
+.nitro-info h1, .nitro-info h2, .featured-shops h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.shop-details, .location-hours, .menu-highlights, .customer-reviews {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.shop-details:hover, .location-hours:hover, .menu-highlights:hover, .customer-reviews:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.interactive-feature h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.interactive-feature {
+    animation: fadeIn 1s ease-out;
+}
+
+.photo-gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.photo-gallery .gallery-item {
+    width: calc(25% - 10px);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.photo-gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.photo-gallery .gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .photo-gallery .gallery-item {
+        width: calc(50% - 10px);
+    }
+}
+
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.photo-gallery .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.photo-gallery .gallery-item {
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+.photo-gallery .gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .photo-gallery .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.photo-gallery {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    header h1 span {
+        display: none;
+    }
+}
+
+h1:not(header h1) {
+    color: #333; /* Sets a standard color for h1 elements outside the header */
+}
+
+.featured-shops a {
+    text-decoration: none; /* Removes underline from shop name links */
+}
+
+.heart-emoji {
+    color: #9DBF9E; /* Example blue color */
+}
+
+.header-logo {
+    height: auto; /* Maintain the aspect ratio */
+    width: 50px; /* Set a fixed width, adjust as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
