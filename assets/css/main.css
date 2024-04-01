@@ -1,6 +1,18 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
+/* Import Raleway with 400, 500, 700, and 800 font weights */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,800&display=swap');
+
+/* Import Roboto with 400, 500, 700, and 900 font weights */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -197,6 +209,29 @@ input, select, textarea {
 		letter-spacing: 0.35em;
 	}
 
+
+	/* Apply the fonts to your elements
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+} */
+
+
+/* Set Merriweather as the default font for body text */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Use Poppins for all heading elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+	
 		h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 		}
@@ -2823,19 +2858,23 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 2.5em 0 0.1em 0 ;
+		padding: 2.5em 0 0.1em 0;
 	}
 
 		#header .logo {
 			display: block;
 			border-bottom: 0;
 			color: inherit;
-			font-weight: 900;
-			letter-spacing: 0.35em;
+			/* font-weight: 900; */
+			letter-spacing: 0.1em;
 			margin: 0 0 2.5em 0;
 			text-decoration: none;
-			text-transform: uppercase;
+			/* text-transform: uppercase; */
 			display: inline-block;
+			font-size: 2em;
+			font-weight:600;
+			color: #9DBF9E;
+			font-family: 'Raleway', sans-serif;
 		}
 
 			#header .logo > * {
@@ -2855,8 +2894,8 @@ input, select, textarea {
 
 		#header nav {
 			position: fixed;
-			right: 2em;
-			top: 2em;
+			right: 13em;
+			top: 2.5em;
 			z-index: 10000;
 		}
 
@@ -2947,7 +2986,7 @@ input, select, textarea {
 
 				#header nav {
 					right: 0.5em;
-					top: 0.5em;
+					top: 1.5em;
 				}
 
 					#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
@@ -2956,6 +2995,12 @@ input, select, textarea {
 
 		}
 
+		@media screen and (min-width: 768px) and (max-width: 1024px) {
+			#header nav {
+				right: 2.5em; /* Adjust the value to suit your design */
+			}
+		}
+		
 /* Menu */
 
 	#wrapper {
@@ -3305,6 +3350,13 @@ input, select, textarea {
 
 		}
 
+
+
+		body, body *, button, input[type="button"], input[type="submit"], a, .button {
+			text-transform: lowercase !important;
+		}
+		
+		
 /* Wrapper */
 
 	#wrapper > * > .inner {
